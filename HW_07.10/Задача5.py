@@ -27,7 +27,6 @@ def f(nums):
     for length in range(2, len(nums) + 1):
         indexes = [i for i in range(length)]
         while True:
-            print(indexes)
             seq = [nums[x] for x in indexes]
             if is_it_increasing_sequence(seq):
                 with open("ex5_result.txt", "a") as file:
